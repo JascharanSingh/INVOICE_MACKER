@@ -10,33 +10,33 @@ const InvoiceForm = ({ setInvoiceData }) => {
   };
 
   return (
-    <div style={{ margin: "1rem" }}>
-      <form className="container w-50 mt-5 mb-5 p-3 bg-light">
-      <h2>Create Invoice</h2>
-      <div>
-        <label>From: </label>
-        <input className="form-control mb-3" type="text" name="from" onChange={handleChange} />
-      </div>
-      <div>
-        <label>To: </label>
-        <input className="form-control mb-3" type="text" name="to" onChange={handleChange} />
-      </div>
-      <div>
-        <label>Date: </label>
-        <input className="form-control mb-3" type="date" name="date" onChange={handleChange} />
-      </div>
-      <div>
-        <label>Description: </label>
-        <input className="form-control mb-3" type="text" name="description" onChange={handleChange} />
-      </div>
-      <div>
-        <label>Hourly Rate ($): </label>
-        <input className="form-control mb-3" type="number" name="hourly" onChange={handleChange} />
-      </div>
-      <div>
-        <label>Total ($): </label>
-        <input className="form-control mb-3" type="number" name="total" onChange={handleChange} />
-      </div>
+    <div className="container-fluid py-3 mt-5">
+      <form className="container mx-auto p-3 bg-light shadow rounded">
+        <h2 className="mb-4">Create Invoice</h2>
+        <div className="mb-3">
+          <label className="form-label">From: </label>
+          <input className="form-control" type="text" name="from" onChange={handleChange} />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">To: </label>
+          <input className="form-control" type="text" name="to" onChange={handleChange} />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Date: </label>
+          <input className="form-control" type="date" name="date" onChange={handleChange} />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Description: </label>
+          <input className="form-control" type="text" name="description" onChange={handleChange} />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Hourly Rate ($): </label>
+          <input className="form-control" type="number" name="hourly" onChange={handleChange} />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Total ($): </label>
+          <input className="form-control" type="number" name="total" onChange={handleChange} />
+        </div>
       </form>
     </div>
   );
