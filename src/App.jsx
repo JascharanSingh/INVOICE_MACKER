@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import InvoiceForm from "./components/invoiceForm";
-import InvoicePreview from "./components/InvoicePreview";
+import InvoicePreview from "./components/invoicePreview";
 
 function App() {
   const [invoiceData, setInvoiceData] = useState({
